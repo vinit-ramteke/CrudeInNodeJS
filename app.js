@@ -24,7 +24,7 @@ app.get('/xyz', (req, res) => {
     res.render('index');
 });
 
-app.get('/xyz', (req, res) => {
+app.get('/deepak', (req, res) => {
     res.render('index');
 });
 
