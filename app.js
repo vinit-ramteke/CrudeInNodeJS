@@ -15,18 +15,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get('/abc', (req, res) => {
-    res.render('index');
+app.get('/Document', (req, res) => {
+    res.render('Document');
 });
 
-
-app.get('/xyz', (req, res) => {
-    res.render('index');
-});
-
-app.get('/deepak', (req, res) => {
-    res.render('index');
-});
 
 
 const PORT = process.env.PORT || 3000;
