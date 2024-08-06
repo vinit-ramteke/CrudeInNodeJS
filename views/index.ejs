@@ -1,32 +1,727 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">  </script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/Js/index.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href= "https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
-    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="/css/style.css">
+  <title>Application Form!</title>
 </head>
-<body>
-    <%- include('partials/header') %>
-    <%- include('addmintionForm') %>
 
-    
+<body>
+  <div class="container-fluid">
+    <!-- <div class="heading my-4">
+      <h2>Application Form</h2>
+    </div> -->
+    <div class="bg-primary text-white rounded">
+      <h3 class=" p-2 text-center">EZAPIYA SOFTWARE RESEARCH AND DEVELOPMENT LLP</h3>
+      <p class="text-center">PLOT NO.64 DHYANDRIKA HSG SOC.LTD.MALIK MOUZA, NAGPUR, Maharashtra, 441204,India</p>
+      <h5 class="text-center p-2 text-decoration-underline">Admission Form</h5>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <div class="page-btn">
+          <a href="http://localhost:3000/"><button type="button" class="btn button-87"><i class="bi bi-person m-1"></i>Profile</button></a>
+          <!-- <a href="./Academic.html"><button type="button" class="btn button-87">Academic</button></a> -->
+
+          <a href="http://localhost:3000/Document"><button type="button" class="btn button-87">
+              <i class="bi bi-file-earmark-fill m-1"></i>Documents</button></a>
+        </div>
+      </div>
+    </div>
+
+    <form onsubmit="return validateForm()" action="Academic.html">
+  </div>
+</div>
+
+  <!----------------------------------------------------- -->
+  <div class="form-section bg-info p-4 mt-3" style="border-radius: 12px;">
+    <div class="formcontent bg-light" style="border-radius: 12px;">
+      <div class="heading p-4 mx-2">
+        <h4>Courses:-</h4>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">1. <span>C Language</span></label>
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">2. <span> C++ Language</span></label>
+            <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">3. <span>Core Java</span>  </label>
+            <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">4.    <span>ADV Java</span> </label>
+            <input class="form-check-input" type="checkbox" id="check4" name="option4" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">5.    <span>Dot Net</span></label>
+            <input class="form-check-input" type="checkbox" id="check5" name="option5" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">6.  <span>Web Development</span></label>
+            <input class="form-check-input" type="checkbox" id="check6" name="option6" value="something">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">7.   <span>PHP</span></label>
+            <input class="form-check-input" type="checkbox" id="check7" name="option7" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">8.   <span> Projects</span></label>
+            <input class="form-check-input" type="checkbox" id="check8" name="option8" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">9.   <span>Node</span></label>
+            <input class="form-check-input" type="checkbox" id="check9" name="option9" value="something">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">10.   <span>ASP</span></label>
+            <input class="form-check-input" type="checkbox" id="check7" name="option7" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">11.   <span> Android</span></label>
+            <input class="form-check-input" type="checkbox" id="check8" name="option8" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">12.   <span>Other</span></label>
+            <input class="form-check-input" type="checkbox" id="check9" name="option9" value="something">
+          </div>
+        </div>
+      </div>
+      <div class="heading p-4 mx-2">
+        <h4>Internship:-</h4>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">1).  <span>3 Month Internship</span> </label>
+            <input class="form-check-input" type="checkbox" id="check10" name="option10" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">2).   <span>6 Month Internship</span> </label>
+            <input class="form-check-input" type="checkbox" id="check10" name="option10" value="something">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check ms-5">
+            <label class="form-check-label fw-bold">3).   <span>1 Internship</span></label>
+            <input class="form-check-input" type="checkbox" id="check10" name="option10" value="something">
+          </div>
+        </div>
+      </div>
+
+      <div class="heading p-4 mx-2">
+        <h4>Contact Details:</h4>
+        <hr>
+      </div>
+      <div class="row p-2 mx-2">
+        <div class="col-sm-4 col-4 col-md-4">
+          <label for="txtFullName" class="col-form-label">Full Name<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-8 col-8 col-md-8">
+          <input type="text" id="txtFullName" oninput="validateAndFormatFullName()" placeholder="Enter Full Name"
+            class="form-control">
+        </div>
+      </div>
+
+      <div class="row p-2 mx-2">
+        <div class="col-sm-4 col-4 col-md-4">
+          <label for="txtFatherName" class="col-form-label">Father's Name</label>
+        </div>
+        <div class="col-sm-8 col-8 col-md-8">
+          <input type="text" id="txtFatherName" oninput="validateFatherName()" placeholder="Father's Name"
+            class="form-control">
+        </div>
+      </div>
+
+      <div class="row p-2 mx-2">
+        <div class="col-sm-4 col-4 col-md-4">
+          <label for="txtMotherName" class="col-form-label">Mother's Name</label>
+        </div>
+        <div class="col-sm-8 col-8 col-md-8">
+          <input type="text" id="txtMotherName" oninput="validateMotherName()" placeholder="Mother's Name"
+            class="form-control">
+        </div>
+      </div>
+
+      <div class="row p-2 mx-2">
+        <div class="col-sm-4 col-4 col-md-4">
+          <label for="gender" class="col-form-label">Gender<span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-8 col-8 col-md-8">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="radioMale">
+            <label class="form-check-label" for="radioMale">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="radioFemale">
+            <label class="form-check-label" for="radioFemale">Female</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-2 mx-2">
+        <div class="col-sm-4 col-4 col-md-4">
+          <label for="txtDOB" class="col-form-label">DOB</label>
+        </div>
+        <div class="col-sm-8 col-8 col-md-8">
+          <input type="date" id="txtDOB" class="form-control">
+        </div>
+      </div>
+
+      <div class="row p-2 mx-2">
+        <div class="col-sm-4 col-4 col-md-4">
+          <label for="txtEmail" class="col-form-label">Email <span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-8 col-8 col-md-8">
+          <input type="email" id="txtEmail" placeholder="Enter Email" class="form-control">
+          <span id="emailError" class="text-danger"></span>
+        </div>
+      </div>
+
+      <div class="row p-2 mx-2">
+        <div class="col-sm-4 col-4 col-md-4">
+          <label for="txtPhone" class="col-form-label">Phone <span class="text-danger">*</span></label>
+        </div>
+        <div class="col-sm-8 col-8 col-md-8">
+          <input type="text" id="txtPhone" placeholder="Enter Phone" class="form-control">
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-12 col-12 col-md-6 mt-3">
+        <div class="leftForm bg-light p-4" style="border-radius: 12px;">
+          <div class="heading p-2 mx-2">
+            <h4 class="mb-5">Permanent Address :</h4>
+            <hr>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="txtFlatNo" class="col-form-label">House/Flat no</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtFlatNo" placeholder="House no" class="form-control">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtStreet" class="col-form-label">Street</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtStreet" placeholder="Street name" class="form-control">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtState" class="col-form-label">State<span class="text-danger">*</span></label>
+            </div>
+            <div class="col-sm-6">
+              <select class="form-select" id="txtselectState" aria-label="Default select example">
+                <option value="0">Select State</option>
+                <option value="1">Maharashtra (MH)</option>
+                <option value="2">Chhattisgarh (CG)</option>
+                <option value="3">Madhya Pradesh (MP)</option>
+              </select>
+              <!-- <input type="text" id="txtState" placeholder="State" class="form-control"> -->
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtCity_or_Village" class="col-form-label">City/Village<span
+                  class="text-danger">*</span></label>
+            </div>
+            <div class="col-sm-6">
+              <select class="form-select" id="txtCity_or_Village" aria-label="Default select example">
+                <option value="0">Select City</option>
+              </select>
+              <!-- <input type="text" id="txtCity_or_Village" placeholder="City/Village" class="form-control"> -->
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtDistrict" class="col-form-label">District</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtDistrict" placeholder="District" class="form-control">
+            </div>
+          </div>
+
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtPinCode" class="col-form-label">Pin code<span class="text-danger">*</span></label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtPinCode" placeholder="Pincode" class="form-control">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtCountry" class="col-form-label">Country</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtCountry" placeholder="Country" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-12 col-md-6 mt-3">
+        <div class="rightForm bg-light p-4" style="border-radius: 12px;">
+          <div class="heading p-2 mx-2">
+            <h4 class="mb-1">Mailing Address :</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="cbxAddress" onclick="copyAddress()">
+              <label class="form-check-label" for="cbxAddress">
+                Same as permanent address
+              </label>
+            </div>
+            <hr>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtP_FlatNo" class="col-form-label">House/Flat no</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtP_FlatNo" placeholder="House no" class="form-control">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtP_Street" class="col-form-label">Street</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtP_Street" placeholder="Street name" class="form-control">
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtP_State" class="col-form-label">State<span class="text-danger">*</span></label>
+            </div>
+            <div class="col-sm-6">
+              <select class="form-select" id="txtP_selectState" aria-label="Default select example">
+                <option value="0">Select State</option>
+                <option value="1">Maharashtra (MH)</option>
+                <option value="2">Chhattisgarh (CG)</option>
+                <option value="3">Madhya Pradesh (MP)</option>
+              </select>
+              <!-- <input type="text" id="txtP_State" placeholder="State" class="form-control"> -->
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtP_City_or_Village" class="col-form-label">City/Village<span
+                  class="text-danger">*</span></label>
+            </div>
+            <div class="col-sm-6">
+              <select class="form-select" id="txtP_City_or_Village" aria-label="Default select example">
+                <option value="0">Select City</option>
+              </select>
+              <!-- <input type="text" id="txtP_City_or_Village" placeholder="City/Village" class="form-control"> -->
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtP_District" class="col-form-label">District</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtP_District" placeholder="District" class="form-control">
+            </div>
+          </div>
+
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtP_PinCode" class="col-form-label">Pin code<span class="text-danger">*</span></label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtP_PinCode" placeholder="Pincode" class="form-control">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-sm-6">
+              <label for="txtP_Country" class="col-form-label">Country</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" id="txtP_Country" placeholder="Country" class="form-control">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col text-center d-flex justify-content-end">
+      <button type="submit" onsubmit="return validateForm()" class="btn button-87 px-5">Next -></button>
+    </div>
+  </div>
+  </form>
+  </div>
+
+  <script>
+    document.getElementById('txtPhone').addEventListener('input', function (e) {
+      // Only allow numeric input and restrict length to 10 digits
+      this.value = this.value.replace(/[^0-9]/g, '');
+      if (this.value.length > 10) {
+        this.value = this.value.slice(0, 10);
+      }
+    });
+    document.getElementById('txtPinCode').addEventListener('input', function (e) {
+      // Only allow numeric input and restrict length to 10 digits
+      this.value = this.value.replace(/[^0-6]/g, '');
+      if (this.value.length > 6) {
+        this.value = this.value.slice(0, 6);
+      }
+    });
+    document.getElementById('txtP_PinCode').addEventListener('input', function (e) {
+      // Only allow numeric input and restrict length to 10 digits
+      this.value = this.value.replace(/[^0-6]/g, '');
+      if (this.value.length > 6) {
+        this.value = this.value.slice(0, 6);
+      }
+    });
+
+
+    function isValidEmail(email) {
+      // Basic email validation using regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    // this function for the email must contain @ ........................................................................
+    document.getElementById("txtEmail").addEventListener("input", function () {
+      var emailInput = document.getElementById("txtEmail").value;
+      var emailError = document.getElementById("emailError");
+      var atIndex = emailInput.indexOf("@");
+      if (atIndex === -1) {
+        emailError.textContent = "Email must contain @ symbol";
+      } else {
+        emailError.textContent = "";
+      }
+    });
+
+
+    // this function or code for the state wise city..........................................................
+
+    // City data grouped by state
+    var citiesByState = {
+      1: ["Nagpur (MH)", "Pune (MH)", "Thane (MH)", "Nashik (MH)", "Amravati (MH)", "Aurangabad (MH)"],
+      2: ["Raipur (Capital city) (CG)", "Bhilai (CG)", "Durg (CG)", "Ambikapur (CG)", "Jagdalpur (CG)", "Bilhaipur (CG)"],
+      3: ["Indore (MP)", "Bhopal (MP)", "Gwalior (MP)", "Jabalpur (MP)", "Ujjain (MP)", "Satna (MP)", "Sagar (MP)"]
+    };
+
+    // ........................address 1......................
+    function populateCities1() {
+      var stateSelect = document.getElementById("txtselectState");
+      var citySelect = document.getElementById("txtCity_or_Village");
+      var selectedState = stateSelect.value;
+
+      // Clear existing options
+      citySelect.innerHTML = "<option value='0'>Select City</option>";
+
+      // Add options based on selected state
+      if (selectedState !== "0") {
+        citiesByState[selectedState].forEach(function (city) {
+          var option = document.createElement("option");
+          option.text = city;
+          option.value = city;
+          citySelect.add(option);
+        });
+      }
+    }
+    document.getElementById("txtselectState").addEventListener("change", populateCities1);
+    populateCities();
+
+    // ........................address 2......................
+    // Function to populate city dropdown based on selected state
+    function populateCities() {
+      var stateSelect = document.getElementById("txtP_selectState");
+      var citySelect = document.getElementById("txtP_City_or_Village");
+      var selectedState = stateSelect.value;
+
+      // Clear existing options
+      citySelect.innerHTML = "<option value='0'>Select City</option>";
+
+      // Add options based on selected state
+      if (selectedState !== "0") {
+        citiesByState[selectedState].forEach(function (city) {
+          var option = document.createElement("option");
+          option.text = city;
+          option.value = city;
+          citySelect.add(option);
+        });
+      }
+    }
+    document.getElementById("txtP_selectState").addEventListener("change", populateCities);
+    populateCities();
+    // ............................................................................................
+
+    function validateFatherName() {
+      const input = document.getElementById('txtFatherName');
+      let value = input.value;
+      // Remove any characters that are not letters or spaces
+      value = value.replace(/[^a-zA-Z\s]/g, '');
+      // Capitalize the first letter of each word
+      value = value.replace(/\b\w/g, function (char) {
+        return char.toUpperCase();
+      });
+      input.value = value;
+    }
+
+    function validateMotherName() {
+      const input = document.getElementById('txtMotherName');
+      let value = input.value;
+      value = value.replace(/[^a-zA-Z\s]/g, '');
+      value = value.replace(/\b\w/g, function (char) {
+        return char.toUpperCase();
+      });
+      input.value = value;
+    }
+
+    function validateAndFormatFullName() {
+      const input = document.getElementById('txtFullName');
+      let value = input.value;
+      // Remove any characters that are not letters or spaces
+      value = value.replace(/[^a-zA-Z\s]/g, '');
+      // Capitalize the first letter of each word
+      value = value.replace(/\b\w/g, function (char) {
+        return char.toUpperCase();
+      });
+      input.value = value;
+    }
+
+    function validateGenderSelection() {
+      var maleRadio = document.getElementById('radioMale');
+      var femaleRadio = document.getElementById('radioFemale');
+      if (!maleRadio.checked && !femaleRadio.checked) {
+        alert('Please select a gender.');
+        return false;
+      }
+      return true;
+    }
+
+
+    function copyAddress() {
+      if (document.getElementById('cbxAddress').checked) {
+        document.getElementById('txtP_FlatNo').value = document.getElementById('txtFlatNo').value;
+        document.getElementById('txtP_Street').value = document.getElementById('txtStreet').value;
+        document.getElementById('txtP_City_or_Village').value = document.getElementById('txtCity_or_Village').value;
+        document.getElementById('txtP_District').value = document.getElementById('txtDistrict').value;
+        document.getElementById('txtP_selectState').value = document.getElementById('txtselectState').value;
+        document.getElementById('txtP_PinCode').value = document.getElementById('txtPinCode').value;
+        document.getElementById('txtP_Country').value = document.getElementById('txtCountry').value;
+      } else {
+        document.getElementById('txtP_FlatNo').value = "";
+        document.getElementById('txtP_Street').value = "";
+        document.getElementById('txtP_City_or_Village').value = "";
+        document.getElementById('txtP_District').value = "";
+        document.getElementById('txtP_State').value = "";
+        document.getElementById('txtP_PinCode').value = "";
+        document.getElementById('txtP_Country').value = "";
+      }
+    }
+
+    function validateForm() {
+      validateAndFormatFullName();
+      validateMotherName();
+      validateFatherName();
+
+      const FullName = document.getElementById("txtFullName").value;
+      const FatherName = document.getElementById("txtFatherName").value;
+      const MotherName = document.getElementById("txtMotherName").value;
+      const OptionGender = document.querySelector('input[name="gender"]:checked') ? document.querySelector('input[name="gender"]:checked').value : "";
+      const DateOfBirth = document.getElementById("txtDOB").value;
+      const Email = document.getElementById("txtEmail").value;
+      const Phone = document.getElementById("txtPhone").value;
+
+
+      // ............Address..............................
+      const FlatNo = document.getElementById("txtFlatNo").value;
+      const Street = document.getElementById("txtStreet").value;
+      const City_or_Village = document.getElementById("txtCity_or_Village").value;
+      const District = document.getElementById("txtDistrict").value;
+      const State = document.getElementById("txtselectState").value;
+      const PinCode = document.getElementById("txtPinCode").value;
+      const Country = document.getElementById("txtCountry").value;
+
+      const P_FlatNo = document.getElementById("txtP_FlatNo").value;
+      const P_Street = document.getElementById("txtP_Street").value;
+      const P_City_or_Village = document.getElementById("txtP_City_or_Village").value;
+      const P_District = document.getElementById("txtP_District").value;
+      const P_State = document.getElementById("txtP_selectState").value;
+      const P_PinCode = document.getElementById("txtP_PinCode").value;
+      const P_Country = document.getElementById("txtP_Country").value;
+
+      if (FullName === "") {
+        alert("Enter Full Name");
+        return false;
+      }
+      // if (FatherName === "") {
+      //   alert("Enter Father's Name");
+      //   return false;
+      // }
+      // if (MotherName === "") {
+      //   alert("Enter Mother's Name");
+      //   return false;
+      // }
+      if (OptionGender === "") {
+        alert("Please select a gender.");
+        return false;
+      }
+      // if (DateOfBirth === "") {
+      //   alert("Enter Date Of Birth");
+      //   return false;
+      // }
+      if (Email === "") {
+        alert("Enter Email");
+        return false;
+      }
+      if (!isValidEmail(Email)) {
+        alert("Enter a valid email address.");
+        return false;
+      }
+      // if (Email.length > 20) {
+      //   alert("Email should be less than 20 characters.");
+      //   return false;
+      // }
+      if (Phone === "") {
+        alert("Enter Phone Number");
+        return false;
+      }
+      if (Phone.length !== 10) {
+        alert("Phone number should be exactly 10 digits.");
+        return false;
+      }
+      if (isNaN(Phone)) {
+        alert("Only numbers are allowed for Phone.");
+        return false;
+      }
+      // if (FlatNo === "") {
+      //   alert("Enter House/Flat Number");
+      //   return false;
+      // }
+      // if (Street === "") {
+      //   alert("Enter Street");
+      //   return false;
+      // }
+      if (State === "0") {
+        alert("Please select State");
+        return false;
+      }
+      if (City_or_Village === "0") {
+        alert("Please select City");
+        return false;
+      }
+      // if (District === "") {
+      //   alert("Enter District");
+      //   return false;
+      // }
+
+      if (PinCode === "") {
+        alert("Enter Pin code");
+        return false;
+      }
+      // if (Country === "") {
+      //   alert("Enter Country");
+      //   return false;
+      // }
+      // if (P_FlatNo === "") {
+      //   alert("Enter House/Flat Number");
+      //   return false;
+      // }
+      // if (P_Street === "") {
+      //   alert("Enter Street");
+      //   return false;
+      // }
+      if (P_State === "0") {
+        alert("Please select State");
+        return false;
+      }
+      if (P_City_or_Village === "0") {
+        alert("Please select City");
+        return false;
+      }
+      // if (P_District === "") {
+      //   alert("Enter District");
+      //   return false;
+      // }
+
+      if (P_PinCode === "") {
+        alert("Enter Pin code");
+        return false;
+      }
+      // if (P_Country === "") {
+      //   alert("Enter Country");
+      //   return false;
+      // }
+      window.location.href = 'Academic.html';
+      return true;
+    }
+
+  </script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYdH9q10VbRANh1zIYtI2wIJWsB4rEddr8ksTceMiIH1dX+OMBl9WIegG" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>
